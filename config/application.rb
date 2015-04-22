@@ -25,10 +25,12 @@ module Api
 
     config.generators do |g|
       g.orm             :active_record
-      g.template_engine nil
+      g.template_engine false
       g.test_framework  :test_unit, fixture: true
       g.stylesheets     false
       g.assets          false
+      g.jbuilder        false
+      g.helper          false
     end
   end
 end

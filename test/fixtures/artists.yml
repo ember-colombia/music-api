@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+daftpunk:
+  name: Daft Punk
+  website_url: http://daftpunk.com
+
+two:
+  name: MyString
+  website_url: MyString
