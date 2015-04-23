@@ -2,7 +2,7 @@ class SongsController < ApplicationController
   before_action :set_song, only: [:show, :edit, :update, :destroy]
 
   def index
-    @songs = Artist.all
+    @songs = Song.all
     render json: @songs
   end
 
