@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  published_at: 2015-04-22
+  cover_url: MyString
+  length: 
+  artist_id: 
+
+two:
+  name: MyString
+  published_at: 2015-04-22
+  cover_url: MyString
+  length: 
+  artist_id: 
