@@ -11,7 +11,7 @@ class AlbumsController < ApplicationController
   end
 
   def create
-    @album = Artist.new(album_params)
+    @album = Album.new(album_params)
 
     if @album.save
       render :show, status: :created
