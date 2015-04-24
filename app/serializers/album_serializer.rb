@@ -1,4 +1,4 @@
 class AlbumSerializer < ActiveModel::Serializer
-  attributes :id, :name, :published_at, :cover_url, :length
+  attributes :id, :name, :published_at, :cover_url
   has_many :songs
 end
