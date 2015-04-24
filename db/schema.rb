@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20150423035104) do
 
   create_table "albums", force: :cascade do |t|
     t.string   "name"
-    t.date     "published_at"
+    t.datetime "published_at"
     t.string   "cover_url"
     t.integer  "length"
     t.integer  "artist_id"
@@ -36,11 +36,13 @@ ActiveRecord::Schema.define(version: 20150423035104) do
     t.string   "name"
     t.string   "url"
     t.integer  "length"
+    t.integer  "album_id"
     t.integer  "artist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  add_index "songs", ["album_id"], name: "index_songs_on_album_id"
   add_index "songs", ["artist_id"], name: "index_songs_on_artist_id"
 
 end
