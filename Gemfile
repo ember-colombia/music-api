@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
+ruby '2.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use postgres as the database for Active Record
-gem 'pg'
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -23,6 +23,13 @@ gem 'active_model_serializers', '~> 0.9.3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+group :production do
+  # Use postgres as the database for Active Record
+  gem 'pg'
+
+  gem 'rails_12factor'
+end
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
